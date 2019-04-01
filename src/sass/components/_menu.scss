@@ -11,6 +11,7 @@
         text-underline-position: under;
         font-family: $font-sans-general;
         font-size: 120%;
+        transition: color 0.3s ease-out;
 
         &:hover {
             color: darken( $color-green-dark, 30% );
