@@ -1,0 +1,17 @@
+.logo {
+    background-color: $color-white;
+    height: 25px;
+
+    &__link {
+        display: inline-block;
+        border: 1px solid $color-black;
+        padding: 10px 30px;
+        position: relative;
+        top: 5px;
+        left: 30px;
+        text-decoration: none;
+        color: $color-black;
+        font-family: $font-serif-general;
+        font-size: 140%;
+    }
+}

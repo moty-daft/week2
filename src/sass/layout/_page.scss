@@ -1,0 +1,52 @@
+.page {
+    background-color: $color-green-light;
+
+    &__main-area {
+        width: 1050px;
+        margin: 0 auto;
+        overflow-y: scroll;
+        max-height: 800px;
+
+        &::-webkit-scrollbar {
+            width: 4px;
+            background-color: $color-green-light;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background-color: $color-green-dark;
+        }
+    }
+
+    @media screen and (max-width: 1100px) {
+        &__main-area {
+            width: 700px;
+        }
+    }
+
+    @media screen and (max-width: 700px) {
+        &__main-area {
+            width: 350px;
+        }
+    }
+
+    &__footer {
+        bottom:0px;
+        background-color: $color-white;
+        clear: both;
+        height: 50px;
+        line-height: 50px;
+        font-family: $font-sans-general;
+        font-size: 80%;
+        color: $color-gray-medium;
+        padding: 0 30px;
+        box-sizing: border-box;
+
+        &--left {
+            float: left;
+        }
+
+        &--right {
+            float: right;
+        }
+    }
+}

@@ -1,0 +1,48 @@
+.menu {
+    margin: 50px auto;
+    width: 1050px;
+    
+    &__item {
+        text-decoration: none;
+        color: $color-green-dark;
+        display: block;
+        float: left;
+        margin: 10px 30px 50px 0;
+        text-underline-position: under;
+        font-family: $font-sans-general;
+        font-size: 120%;
+
+        &:hover {
+            color: darken( $color-green-dark, 30% );
+        }
+
+        &--active {
+            color: $color-black;
+            text-decoration: underline;
+        }
+    }
+
+    @media screen and (max-width: 1100px) {
+        &__item {
+            margin: 10px 30px 10px 0;
+        }
+    }
+    
+    @media screen and (max-width: 700px) {
+        &__item {
+            margin: 10px 30px 10px 0;
+        }
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .menu {
+        width: 700px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .menu {
+        width: 350px;
+    }
+}
